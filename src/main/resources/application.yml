@@ -1,10 +1,10 @@
 jwt:
   secret: eLearning
 spring:
-  datasource:
-    password: ${DB_PASSWORD:}
-    url: ${DB_URL:jdbc:h2:~/LMSTest}
-    username: ${DB_USER:sa}
+  datasource: 
+    password: ${DB_PASSWORD:2ba84fe6924ad5b231d7d14ad1bbadef0a50efea8f5e0bbb2a79185c81ee9061}
+    url: ${DB_URL:jdbc:postgres:ec2-54-228-174-49.eu-west-1.compute.amazonaws.com}
+    username: ${DB_USER:bogfyrzwuctkat}
   h2:
     console:
       enabled: true
