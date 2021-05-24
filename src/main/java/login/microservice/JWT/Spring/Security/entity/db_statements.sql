@@ -1,5 +1,5 @@
 create table role_table(name varchar(50), id SERIAL NOT NULL, PRIMARY KEY(ID));
-create table user_table(login varchar(50), password varchar(500), role_id integer, id serial not null, primary key(id));
+create table user_table(login varchar(50) UNIQUE, password varchar(500), role_id integer, id serial not null, primary key(id));
 alter table user_table add foreign key (role_id) references role_table(id);
 
 select * from role_table;
